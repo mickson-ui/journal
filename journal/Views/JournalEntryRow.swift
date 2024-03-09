@@ -9,7 +9,16 @@ import SwiftUI
 
 struct JournalEntryRow: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            VStack(alignment: .leading){
+                Text("Date: March 6, 2024")
+                    .font(.headline)
+                Text("Gratitude journal content goes here.")
+                    .font(.subheadline)
+                    .lineLimit(2)
+            }
+        }
+        .padding(.vertical, 8)
     }
 }
 

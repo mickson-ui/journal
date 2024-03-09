@@ -11,6 +11,15 @@
 		6ED0AA622B99064B001B17EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA612B99064B001B17EA /* ContentView.swift */; };
 		6ED0AA642B99064D001B17EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0AA632B99064D001B17EA /* Assets.xcassets */; };
 		6ED0AA672B99064D001B17EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0AA662B99064D001B17EA /* Preview Assets.xcassets */; };
+		6ED0AA712B99094A001B17EA /* JournalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA702B99094A001B17EA /* JournalList.swift */; };
+		6ED0AA732B990961001B17EA /* JournalEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA722B990961001B17EA /* JournalEntryRow.swift */; };
+		6ED0AA772B9910C2001B17EA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0AA762B9910C2001B17EA /* Media.xcassets */; };
+		6ED0AA7A2B991C90001B17EA /* simi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0AA792B991C90001B17EA /* simi.mp4 */; };
+		6ED0AA7C2B991EB4001B17EA /* AddJourneyEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA7B2B991EB4001B17EA /* AddJourneyEntryView.swift */; };
+		6ED0AA7F2B992A6C001B17EA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA7E2B992A6C001B17EA /* ImagePicker.swift */; };
+		6ED0AA822B992F31001B17EA /* JournalModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA802B992F31001B17EA /* JournalModel.xcdatamodeld */; };
+		6ED0AA842B993122001B17EA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA832B993122001B17EA /* DataController.swift */; };
+		6ED0AA862B994CBA001B17EA /* EditJournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0AA852B994CBA001B17EA /* EditJournalEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		6ED0AA612B99064B001B17EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6ED0AA632B99064D001B17EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED0AA662B99064D001B17EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6ED0AA702B99094A001B17EA /* JournalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalList.swift; sourceTree = "<group>"; };
+		6ED0AA722B990961001B17EA /* JournalEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryRow.swift; sourceTree = "<group>"; };
+		6ED0AA762B9910C2001B17EA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6ED0AA792B991C90001B17EA /* simi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = simi.mp4; sourceTree = "<group>"; };
+		6ED0AA7B2B991EB4001B17EA /* AddJourneyEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyEntryView.swift; sourceTree = "<group>"; };
+		6ED0AA7E2B992A6C001B17EA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		6ED0AA812B992F31001B17EA /* JournalModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalModel.xcdatamodel; sourceTree = "<group>"; };
+		6ED0AA832B993122001B17EA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6ED0AA852B994CBA001B17EA /* EditJournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				6ED0AA5F2B99064B001B17EA /* journalApp.swift */,
-				6ED0AA612B99064B001B17EA /* ContentView.swift */,
+				6ED0AA7D2B9929F6001B17EA /* Controllers */,
+				6ED0AA6F2B9906AE001B17EA /* Helpers */,
+				6ED0AA6D2B990683001B17EA /* Views */,
+				6ED0AA6E2B99068C001B17EA /* DataModel */,
+				6ED0AA782B991C49001B17EA /* Media */,
 				6ED0AA632B99064D001B17EA /* Assets.xcassets */,
+				6ED0AA762B9910C2001B17EA /* Media.xcassets */,
 				6ED0AA652B99064D001B17EA /* Preview Content */,
 			);
 			path = journal;
@@ -65,6 +88,50 @@
 				6ED0AA662B99064D001B17EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ED0AA6D2B990683001B17EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0AA612B99064B001B17EA /* ContentView.swift */,
+				6ED0AA702B99094A001B17EA /* JournalList.swift */,
+				6ED0AA722B990961001B17EA /* JournalEntryRow.swift */,
+				6ED0AA7B2B991EB4001B17EA /* AddJourneyEntryView.swift */,
+				6ED0AA852B994CBA001B17EA /* EditJournalEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6ED0AA6E2B99068C001B17EA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0AA802B992F31001B17EA /* JournalModel.xcdatamodeld */,
+				6ED0AA832B993122001B17EA /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		6ED0AA6F2B9906AE001B17EA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6ED0AA782B991C49001B17EA /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0AA792B991C90001B17EA /* simi.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		6ED0AA7D2B9929F6001B17EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0AA7E2B992A6C001B17EA /* ImagePicker.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ED0AA672B99064D001B17EA /* Preview Assets.xcassets in Resources */,
+				6ED0AA7A2B991C90001B17EA /* simi.mp4 in Resources */,
+				6ED0AA772B9910C2001B17EA /* Media.xcassets in Resources */,
 				6ED0AA642B99064D001B17EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED0AA7C2B991EB4001B17EA /* AddJourneyEntryView.swift in Sources */,
 				6ED0AA622B99064B001B17EA /* ContentView.swift in Sources */,
+				6ED0AA7F2B992A6C001B17EA /* ImagePicker.swift in Sources */,
+				6ED0AA842B993122001B17EA /* DataController.swift in Sources */,
+				6ED0AA732B990961001B17EA /* JournalEntryRow.swift in Sources */,
+				6ED0AA822B992F31001B17EA /* JournalModel.xcdatamodeld in Sources */,
+				6ED0AA862B994CBA001B17EA /* EditJournalEntryView.swift in Sources */,
 				6ED0AA602B99064B001B17EA /* journalApp.swift in Sources */,
+				6ED0AA712B99094A001B17EA /* JournalList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +422,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6ED0AA802B992F31001B17EA /* JournalModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6ED0AA812B992F31001B17EA /* JournalModel.xcdatamodel */,
+			);
+			currentVersion = 6ED0AA812B992F31001B17EA /* JournalModel.xcdatamodel */;
+			path = JournalModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6ED0AA542B99064B001B17EA /* Project object */;
 }
